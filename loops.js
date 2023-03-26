@@ -12,7 +12,8 @@
 // ==========================================
 
 for (let i = 0; i < 5; i++) {
-    console.log("*".repeat(i+1));}
+    console.log("*".repeat(i+1));
+}
 
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
@@ -97,6 +98,9 @@ for (let i = 0; i < 101; i++) {
         console.log('Fizz')
     } else if (i%5 === 0) {
         console.log('Buzz')
+    }
+    else if (i % 3 === 0 && i% 5 === 0){
+        console.log('FizzBuzz')
     }
     else {
         console.log(i)
