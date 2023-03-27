@@ -96,15 +96,15 @@ for (let i = 0; i < 10; i++) {
 for (let i = 0; i < 101; i++) {
     if (i%3 === 0) {
         console.log('Fizz')
-    } else if (i%5 === 0) {
+    } if (i%5 === 0) {
         console.log('Buzz')
     }
-    else if (i % 3 === 0 && i% 5 === 0){
+     if (i % 3 === 0 && i% 5 === 0){
         console.log('FizzBuzz')
     }
     else {
         console.log(i)
     }
-
 }
 
+// ik krijg FizzBuzz niet voor elkaar alleen door het getal door 3 en 5 te delen. ik krijg niet de juiste FizzBuzz te zien.

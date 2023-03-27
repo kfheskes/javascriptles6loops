@@ -156,15 +156,29 @@ const students = [
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
 
-const neighborhoods = {
-    '3513': 'Pijlsweerd',
-    '3514': 'Vogelenbuurt',
-    '3512': 'Binnenstad',
-    '3531': 'Lombok',
-    '3572': 'Wittevrouwen',
-    '3581': 'Oudwijk',
-    '3583': 'Schildersbuurt'
-};
+
+
+for (let i = 0; i < students.length; i++)
+
+switch (students[i].zipCode) {
+    case '3513':
+        console.log('Pijlsweerd');
+        break;
+    case '3514':
+        console.log('Vogelenbuurt');
+    case '3512':
+        console.log('Binnenstad');
+    case '3531':
+        console.log('Lombok');
+    case '3572':
+        console.log('Wittevrouwen');
+    case '3581':
+        console.log('Oudwijk');
+    case '3583':
+        console.log('Schildersbuurt');
+    default:
+        console.log('Onbekend')
+}
 
 
 
