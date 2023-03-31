@@ -44,8 +44,9 @@ for (let i = 0; i < scores.length; i++) {
     } else {
         console.log('A');
     }
-    console.log(scores[i].score)
+
 }
+console.log(scores)
 
 // ik krijg de cijfers van de eerste opdracht terug in mijn terminal ???
 // B
@@ -128,7 +129,12 @@ for (let i = 0; i <NOVIEmployees.length; i++){
 console.log(NOVIEmployees);
 
 
-
+// for (let i = 0; i < NOVIEmployees.length; i++) {
+//     const emailaddress = NOVIEmployees[i].firstName + '.' + NOVIEmployees[i].lastName + '@novi.nl';
+//     NOVIEmployees[i].email = emailaddress.toLowerCase();
+// }
+//
+// console.log(NOVIEmployees);
 // ==========================================
 // Opdracht 3
 // Schrijf een script die de property "neighborhood" (de buurt) invult op basis van de postcode van onze studenten.

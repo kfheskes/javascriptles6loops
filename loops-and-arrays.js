@@ -10,8 +10,11 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 for (let i = 0; i < names.length; i++)
 {
     names[i] = names[i] + 'je';
-    console.log(names);
+
 }
+
+console.log(names);
+
 // de uitkomst wordt 4 * uitgeprint in plaats van 1 *
 
 // Verwachtte uitkomsten:
@@ -33,12 +36,14 @@ const numbers = [2, 4, 5, 29, 38];
 
 for (let i = 0; 1 < numbers.length; i++) {
     if (numbers[i] % 2 === 0) {
-        numbers[i] *= 2;
-    } else {
-        numbers[i] *= 3;
+        numbers[i] = numbers[i] * 2;
+    } if (numbers[i] % 2 !== 0) {
+        numbers[i] = numbers[i]* 3;
     }
-    console.log(numbers)
+
 }
+
+console.log(numbers)
 
 // krijg na de goede antwoorden oneindig NaN?????????????????????
 
@@ -61,13 +66,12 @@ for (let i = 0; 1 < numbers.length; i++) {
 const squares = [30, 2, 8, 24, 11];
 
 for (let i = 0; i < squares.length; i++) {
-    const length = squares[i];
-    const width = squares[i];
-    const height = squares[i];
-    const volume = length * width * height;
-    squares[i] = ' Het volume van ' + squares[i].length + ' is ' + volume;
-console.log(squares);
+    const volume = squares[i] * squares[i] * squares[i];
+
+    squares[i] = "Het volume van " + squares[i] + " is " + volume;
 }
+
+console.log(squares);
 
 // Javascript rekent stap voor stap de berekening uit hij rekent het niet in 1 keer uit. ???
 
